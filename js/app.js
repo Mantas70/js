@@ -83,13 +83,12 @@ let books  = [
                 ]
     }
 ]
-let property = []
 for (let object of books) for (let multiObject in object) {
     console.log(multiObject.toUpperCase() + ': ')
     console.log(multiObject + ' Literatura' + ' (' + object[multiObject].length + ')')
     for (let number in object[multiObject]) {
         console.log(': ')
-        for (property in object[multiObject][number]) {
+        for (let property in object[multiObject][number]) {
             console.log(property+": ")
         }
     }
